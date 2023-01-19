@@ -1,0 +1,26 @@
+<div class="flex-container ">
+    <h1>Connect 4</h1>
+
+
+    <div *ngIf="!gameOver">
+        <h2>{{this.player1 ? 'Player 2 turn' : 'Player 1 turn'}}</h2>
+    </div>
+    <div *ngIf="gameOver">
+        <div id="playerBox" [ngClass]="this.player1 ? 'player1' : 'player2'"></div>
+        <h1>{{this.winning}}</h1>
+    </div>
+
+    <div id="grid">
+
+        <div class="row" *ngFor="let r of myGrid; let i = index">
+            <div *ngFor="let c of r; let x = index" id="cell" [ngClass]="updateClass(c)"
+                (click)="selectColumn(i, x, $event.target)" #getId(i,x)></div>
+        </div>
+    </div>
+    <div>
+        <button class="button undoButton" (click)="undoMove()">Undo</button>
+        <button class="button resetButton" (click)="resetGame()">Reset</button>
+
+    </div>
+
+</div>

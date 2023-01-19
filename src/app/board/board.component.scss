@@ -1,0 +1,81 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#colorTurn {
+    font-size: 18px;
+}
+
+#grid {
+    margin: 20px auto;
+    display: table;
+    width: 415px;
+    height: 360px;
+    padding: 10px;
+    background: #0083ee;
+    border: 1px solid #0044AA;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-spacing: 5px 5px;
+}
+
+.row {
+    display: table-row;
+}
+
+#cell {
+    display: table-cell;
+    // background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.player1 {
+    background-color: #e00d0d;
+}
+
+.player2 {
+    background-color: #e2e61d;
+}
+
+.none {
+    background-color: #FFFFFF;
+}
+
+#playerBox {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.button {
+
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 8px;
+    // height: 40px;
+}
+
+.resetButton {
+    background-color: red;
+}
+
+.undoButton {
+    background-color: #4CAF50;
+}
